@@ -3,14 +3,13 @@ import { engine } from 'express-handlebars';
 import morgan from 'morgan';
 const app = express();
 
-import {route} from './routes/index.js';
+import { route } from './routes/index.js';
 
-
-// file static 
+// file static
 app.use(express.static('./src/public'));
 
-// When be submitted by form 
-app.use(express.urlencoded({extended: true}));
+// When be submitted by form
+app.use(express.urlencoded({ extended: true }));
 // When be submitted by XMLhttpRequest, fetch, axios,...
 app.use(express.json());
 
@@ -18,11 +17,9 @@ app.use(express.json());
 // app.use(morgan('combined'));
 
 // Template engine
-app.engine('.hbs', engine({extname: '.hbs'}));
+app.engine('.hbs', engine({ extname: '.hbs' }));
 app.set('view engine', '.hbs');
 app.set('views', './src/resources/views');
-
-
 
 //Routes
 route(app);

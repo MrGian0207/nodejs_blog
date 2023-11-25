@@ -1,13 +1,10 @@
-import {newsRouter} from "./news.js";
-import {siteRouter} from "./site.js";
+import { newsRouter } from './news.js';
+import { siteRouter } from './site.js';
 
 function route(app) {
-
-    
     app.use('/news', newsRouter);
-    
-    app.use('/', siteRouter);
 
+    app.use('/', siteRouter);
 }
 
-export  {route};
+export { route };
