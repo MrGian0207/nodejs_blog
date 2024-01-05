@@ -1,19 +1,28 @@
-<nav class="navbar navbar-expand-lg bg-secondary">
-  <div class="container-fluid">
-    <a class="navbar-brand text-color" href="#">MinhHieu Education</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand text-color" href="/">MrGian Education</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link text-color active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-color" href="#">Link</a>
-        </li>
-      </ul>
-
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link text-color dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <img src="https://i.pinimg.com/564x/8d/f5/e7/8df5e76136dcba44841002494e01e050.jpg" alt="" class="user-avatar">
+              Minh Hiếu
+            </a>
+            <ul class="dropdown-menu bg-secondary">
+              <li><a class="dropdown-item icon-link" href="/courses/create">Đăng Khóa Học</a></li>
+                  <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="/me/stored/courses">Khóa học của tôi</a></li>
+              <li><a class="dropdown-item" href="/me/stored/news">Bài viết của tôi</a></li>
+                  <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+            </ul>
+          </li>
+        </ul>
     </div>
   </div>
 </nav>
